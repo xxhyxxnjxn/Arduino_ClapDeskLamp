@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="cover.js?ver=1"></script>
+    <script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background-color: #FF9245;
+      }
+
+      .img{
+        position: relative;
+        background-image: url(images/cover2.jpg);                                    
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;        
+        background-size: cover;
+      }
+      .img-cover{
+        position: absolute;
+        height: 100%;
+        width: 35%;
+        background-color: rgba(0, 0, 0, 0.5);                                                                 
+        z-index:1;
+      }
+      .img .content{
+        font-family: 'Nanum Myeongjo', serif;
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform: translate(-200%, -50%);                                                                   
+        font-size: 3rem;
+        color: white;
+        z-index: 2;
+        text-align: left;
+        
+      }
+      .content2{
+        font-family: 'Tangerine', cursive;
+        position: absolute;
+        top:0%;
+        right: 0%;
+        transform: translate(900%, -70%);                                                          
+        color: #FF9245;
+        z-index: 2;
+        text-align: right;
+      }
+      .button-1{
+        position:absolute;
+        width:140px;
+        height:50px;
+        border:2px solid white;
+        top:110%;
+        left:25%;
+        text-align:center;
+        cursor:pointer;
+        box-sizing:border-box;
+        overflow:hidden;
+        margin:0px 0px 40px 0px;
+        padding-right: 12%;
+      }
+      .button-1 a{
+        font-family:arial;
+        font-size:20px;
+        color: #FF9245;
+        text-decoration:none;
+        line-height:50px;
+        transition:all .5s ease;
+        z-index:2;
+        position:absolute;
+      }
+      .eff-1{
+        width:140px;
+        height:50px;
+        top:-2px;
+        right:-140px;
+        background: #FF9245;
+        position:absolute;
+        transition:all .5s ease;
+        z-index:1;
+        }
+      .button-1:hover .eff-1{
+        right:0;
+      }
+      .button-1:hover a{
+        color:#fff;
+      }
+      
+    </style>
+  </head>
+  <body>
+      <div class="img">
+          <div class="content">
+              <h3>당신만의</h3>
+              <h3><span style="color:#FF9245">인테리어</span>를</h3>
+              <h3>공유해보세요</h3>
+              <div class="content2">
+                <h5>The interior</h5>
+              </div>
+              <div class="button-1">
+                  <div class="eff-1"></div>
+                  <a href="Project.jsp"> Start </a>
+              </div>
+          </div>
+          <div class="img-cover"></div>
+      </div>
+  </body>
+</html>
