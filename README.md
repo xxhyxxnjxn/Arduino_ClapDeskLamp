@@ -11,11 +11,14 @@
 ## 3. 개발 환경
 Visual Code
 
-## 3. 데이터베이스
+## 4. 데이터베이스
 Oracle
 
-## 4. 개발언어
+## 5. 서버
+Apache
+
+## 6. 개발언어
 JSP, HTML, JavaScript
 
-## 5. 수행 역할
+## 7. 수행 역할
 Back-End (Oracle 연동)
